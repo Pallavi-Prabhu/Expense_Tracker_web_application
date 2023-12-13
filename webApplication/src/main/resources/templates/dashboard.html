@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/history.css}">
+    <link rel="shortcut icon" type="image/png" th:href="@{favicon.png}" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/header.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+
+<body>
+
+
+    <div th:replace="~{header :: body}"></div>
+    <div id="dashboardPage">
+        <!-- Content for the dashboard page -->
+        <canvas id="dashboardChart" style="width:100%;max-width:491px;height:245px"></canvas>
+        <div class="dropdownn ">
+            <div class="dropdownn-trigger" onclick="toggleDropdown()">Select Labels &#9660;</div>
+            <div class="dropdownn-content" id="dropdownContent"></div>
+        </div>
+        <button id="buttonLoad">
+            <i class="fa fa-refresh fa-spin"></i>
+        </button>
+
+
+        <canvas id="groupBalanceChart" style="width:100%;max-width:600px"></canvas>
+
+    </div>
+
+
+</body>
+<script src="/js/dashboard.js"></script>
+<script src="/js/header.js"></script>
+
+
+</html>

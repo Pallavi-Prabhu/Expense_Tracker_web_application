@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/home.css}">
+    <link rel="shortcut icon" type="image/png" th:href="@{favicon.png}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/header.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div th:replace="~{header :: body}">
+
+        <!--            <i class="fa-duotone fa-split fa-rotate-270 icon-class"></i>-->
+        <!--            <img src="/images/logo.png" alt="profile">-->
+        <!--        </div>-->
+        <!--        <div><button id="buttonLoad">-->
+        <!--            <i class="fa fa-refresh fa-spin"></i>-->
+        <!--        </button></div>-->
+        <!--        <div>-->
+        <!--            <Button id="logout" onclick="logoutSession()">Logout</Button>-->
+    </div>
+    <section>
+        <!-- <div id="profile">
+            <div id="profilediv">
+                <div id="img">
+                    <i class="fa-solid fa-user icon-class"></i> -->
+        <!--                    <img src="/images/home_profile.png" alt="profile">-->
+        <!-- </div> -->
+        <!-- <div>Hello <span th:text="${email}"></span></div>
+                <div>Total due: </div>
+                <div>Total Pending:</div> -->
+        <!-- <div><button id="activityBtn" onclick="history()">Activity</button></div>
+
+            </div>
+            <div id="groupdiv"> -->
+        <!--                <div class="heading">Groups</div>-->
+
+        <!-- </div> -->
+        <!-- <div id="frienddiv">
+                <div class="heading">Friends</div>-->
+
+        <!-- </div>
+        </div> 
+        </div> -->
+
+        <div id="groups">
+            <div id="addGroup">
+                <button class="buttonStyle" id="addGroupButton" onclick="dropdownGroup()"><i class="fas fa-plus"></i>
+                    Add group</button>
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <div><span id="closeModal" class="close">&times;</span></div>
+                        <div> <select id="sortOptionsGroup" class="inputSize" multiple required>
+
+
+                            </select>
+
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div id="Group">
+                    <button id="buttonLoadGroup">
+                        <i class="fa fa-refresh fa-spin"></i>
+                    </button>
+                    <!--                        <div class="groupDetail">-->
+                    <!--                            <div class="groupName">-->
+                    <!--                                <div>Goa Trip </div>-->
+                    <!--                                <div><span style=" color:red">-100</span></div>-->
+                    <!--                                <div><span style=" color:green">+100</span></div>-->
+                    <!--                            </div>-->
+                    <!--                            <div> <img class="deleteImg" src="/images/delete.png"  alt="delete" ></div>-->
+                    <!--                        </div>-->
+
+                </div>
+
+
+            </div>
+            <div id="friends">
+                <div id="addUser">
+                    <button class="buttonStyle" id="addUserBtn" onclick="dropdown()"><i class="fas fa-plus"></i>
+                        User</button>
+
+                    <select id="sortOptions" class="inputSize" required>
+                        <!-- <option value="" disabled selected>Select User</option> -->
+                        <!--            <option value="1">abc(abc@gmail.com)</option>-->
+                        <!--            <option value="2">cdf(abc@gmail.com)</option>-->
+                        <!--            <option value="3">sfgv(abc@gmail.com)</option>-->
+                        <!--            <option value="4">abc(abc@gmail.com)</option>-->
+                        <!--            <option value="5">cdf(abc@gmail.com)</option>-->
+                        <!--            <option value="6">sfgv(abc@gmail.com)</option>-->
+                    </select>
+
+
+                </div>
+                <div id="friendsGroup">
+
+                    <!--                <button id="buttonLoadFriends">-->
+                    <!--                    <i class="fa fa-refresh fa-spin"></i>-->
+                    <!--                </button>-->
+
+                    <!-- <div class="groupDetail1" id="groupDetail"> -->
+                    <!-- <div class="groupName" >
+            <div>Ayushi </div>
+            <div><span style=" color:red">-100</span></div>
+             </div> -->
+
+                    <!-- <div> <img class="deleteImg" src="/images/delete.png"  alt="delete"></div> -->
+                    <!-- </div> -->
+                </div>
+                <div class="pagination">
+                    <ul id="paginationList">
+
+                    </ul>
+                </div>
+
+
+            </div>
+
+    </section>
+    <!-- </div> -->
+
+</body>
+<script src="/js/home.js"></script>
+<script src="/js/header.js"></script>
+
+</html>

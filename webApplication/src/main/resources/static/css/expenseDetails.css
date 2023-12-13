@@ -1,0 +1,193 @@
+/* body {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  background-color: #fcfcfc;
+  margin: 0;
+  padding: 5px;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+    align-items: center; 
+} */
+
+section {
+  height: 84%;
+  display: flex;
+}
+
+.people-list {
+    margin-top: 1%;
+    margin-right: 1%;
+    width: 28%;
+
+  float: right;
+  height: 100%;
+
+  overflow: auto;
+}
+
+#container {
+  display: flex;
+  width:100%;
+  flex-direction: column;
+  height: 100%;
+
+
+}
+
+#group-container {
+  overflow-y: auto;
+  width:95%;
+  margin-top: 2%;
+  padding: 10px;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px grey;
+    border-radius: 4px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: rgb(184, 182, 182);
+    border-radius: 5px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #686868;
+}
+
+
+.expense-card {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.expense-name {
+  width: 40%;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.paid-by {
+  color: #888;
+  width: 40%;
+}
+
+.buttonStyle {
+  height: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: #ffffff;
+  color: black;
+}
+
+.total-amount {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #888;
+  width: 20%;
+}
+
+.div-flex {
+  display: flex;
+  border-bottom: 1px solid grey;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5px;
+}
+
+.person-amount {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: flex;
+}
+
+#dropdownContainer.hidden {
+  display: none;
+}
+
+#settleClear {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul {
+  padding-left: 10px;
+}
+
+li {
+  margin-bottom: 5px;
+  list-style-type: none;
+}
+
+#dropdownContainer {
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+#peopleDropdown {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+
+#addButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#addButton:hover {
+  background-color: #0056b3;
+}
+
+button:hover
+{
+color: white;
+    background: #373c3b;}
+
+#addPeopleContainer {
+  display: flex;
+  align-items: center;
+}
+
+#buttonLoad {
+
+  border: none;
+  color: black;
+  padding: 12px 24px;
+  font-size: 14px;
+}
+
+#addIcon {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+
+@media (max-width: 600px) {
+  #peopleDropdown {
+    font-size: 10px;
+  }
+}

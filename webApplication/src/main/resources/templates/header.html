@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Your Website</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/header.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+
+</head>
+
+<body>
+    <header>
+        <div class="profile-container">
+            <div class="logo-class"><img src="/images/logo.png" alt="profile"><div class="logo-text">Expense Tracker</div></div>
+            <div class="noticationDiv">
+                <!--            <p class="notification"> </p>-->
+            </div>
+
+            <div class="profile-icon"> <i class="fa-solid fa-user icon-class"></i>
+                <p id="nameEle"></p>
+                <p> &#9660; </p>
+            </div>
+            <div class="dropdown" id="dropdown">
+                <div class="greeting" id="greeting"></div>
+
+
+                <button class="logout" id="logout-button">Logout</button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><i class="fa-solid fa-house nav-icon"></i><a href="/home" class="nav-link">Home</a></li>
+            <li><i class="fas fa-tasks nav-icon"></i><a href="/history" class="nav-link">Activity</a></li>
+            <li><i class="fa-solid fa-chart-line nav-icon"></i><a href="/dashboardd" class="nav-link">Dashboard</a></li>
+        </ul>
+
+    </nav>
+</body>
+<script src="/js/header.js"></script>
+
+</html>

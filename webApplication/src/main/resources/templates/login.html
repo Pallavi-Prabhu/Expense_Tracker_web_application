@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LogIn</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/login.css}">
+    <link rel="shortcut icon" type="image/png" th:href="@{favicon.png}" />
+    <script src="/js/login.js"></script>
+
+</head>
+
+<body>
+    <div class="box">
+        <div><img src="/images/logo.png" alt="profile"></div>
+        <div class="header">
+            <span id="spanLogin">Expense Tracker</span>
+        </div>
+        <div id="errorMsg" th:text="${error}"> </div>
+        <div class="content">
+            <form action="/login" method="POST" onsubmit="return validateData()">
+                <input type="email" name="email" id="logEmail" placeholder="Enter Valid Email">
+                <input type="password" name="password" id="logPassword" placeholder="Enter Password">
+                <br>
+                <input type="submit" value="Login">
+                <p>New User? <a th:href="@{/signup}">Register now!</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

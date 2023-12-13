@@ -1,0 +1,101 @@
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+.container {
+  height: 69%;
+  max-height: 78%;
+  overflow: auto;
+  max-width: 600px;
+  margin: 10px auto 0px;
+  padding: 1% 0% 3% 2%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+}
+.icon-class {
+  font-size: 30px;
+  color: #121212;
+
+}
+input[type="submit"]:hover
+{
+color: white;
+    background: #373c3b;}
+#buttonLoad {
+  background-color: #ffffff;
+  border: none;
+  color: black;
+  padding: 12px 24px;
+  font-size: 14px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#ulId {
+  list-style: none;
+}
+
+#ulId li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.person-label {
+  margin-left: 5px;
+}
+
+.person-input {
+  width: 80px;
+  display: none;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: #ffffff;
+  color: black;
+}
+
+.buttonStyle {
+  width: 113px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: #ffffff;
+  color: black;
+}
+
+select,
+input[type="text"] {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

@@ -1,0 +1,417 @@
+section {
+    margin: 0;
+    padding: 0;
+    height: 85%;
+    font-family: "Barlow", sans-serif;
+    display: flex;
+}
+
+
+#buttonLoadGroup {
+
+    border: none;
+    color: black;
+    padding: 12px 24px;
+    font-size: 14px;
+}
+
+#buttonLoadFriends {
+    margin-top: 20px;
+    border: none;
+    color: black;
+    padding: 12px 24px;
+    font-size: 14px;
+}
+
+#logout {
+    margin-top: 10px;
+    border: 2px solid #484848;
+    width: 100px;
+    height: 40px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #131313;
+    cursor: pointer;
+}
+
+#activityBtn {
+    margin: 0% 20%;
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+#addUser {
+    height: 10%;
+    width: 100%;
+
+    display: flex;
+
+}
+
+#addGroup {
+    width: 90%;
+    height: 10%;
+
+}
+
+
+
+
+/* header {
+    height: 10%;
+    padding: 5px 25px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(163, 161, 161) ;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+ 
+} */
+
+#img {
+    margin-left: 30%;
+}
+
+.groupName {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+
+
+.inputSize {
+    width: 150px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+#groupdiv {
+    height: 30%;
+    overflow-y: auto;
+
+
+
+}
+
+.heading {
+    text-align: center;
+    width: 100%;
+
+
+}
+
+#frienddiv {
+    height: 30%;
+    overflow-y: auto;
+
+
+}
+
+.pagination {
+    margin-top: 10px;
+    text-align: center;
+    display: none;
+    height: 10%;
+}
+
+.pagination ul {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+}
+
+
+.pagination ul li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.pagination ul li a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #9db2c7;
+}
+
+.pagination li a.active {
+    font-weight: bold;
+    color: black;
+}
+
+.pagination ul li.ellipsis {
+    pointer-events: none;
+    cursor: default;
+}
+
+/* .icon-class
+{
+font-size:50px;
+text-align:center;
+color: #121212;} */
+
+
+#sortOptions {
+    visibility: hidden;
+    height: 30px;
+    margin: 9px -6px 0px 0px;
+}
+
+#sortOptionsGroup {
+margin-top: 20%;
+    visibility: hidden;
+    width: 83%;
+    height: 63%;
+
+}
+#addGroupButton
+{
+border: 2px solid #39be;
+}
+#addUserBtn
+{
+border: 2px solid #39be;
+}
+
+#profile {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    width: 25%;
+    border-right: 1px solid rgb(114, 114, 114);
+    box-shadow: 4px 0px 8px rgba(171, 170, 170, 0.4);
+
+
+
+}
+
+.buttonStyle {
+    border-radius: 3px;
+    background-color: #ffffff;
+    color: black;
+    margin-left: 4%;
+    margin-right: 1%;
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+    cursor: pointer;
+
+
+
+}
+
+#groups {
+
+    padding: 1% 0%;
+    width: 54%;
+    height: 98%;
+
+}
+
+#friends {
+
+    padding: 10px;
+    width: 45%;
+    height: 98%;
+    border-left: 0.1px solid #d4cece;
+    box-shadow: 4px 0px 8px rgba(171, 170, 170, 0.4);
+
+
+}
+
+
+.groupDetail {
+
+
+    border: 0.1px solid #d4cece;
+    margin-top: 20px;
+    border-radius: 15px;
+    height: 40px;
+    text-align: center;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+#Group {
+    border-top: 0.1px solid #d4cece;
+    overflow-y: auto;
+    height: 92%;
+    padding-left: 1%;
+    padding-right: 2%;
+}
+
+#Group::-webkit-scrollbar {
+    width: 10px;
+}
+
+#Group::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px grey;
+    border-radius: 4px;
+}
+
+
+#Group::-webkit-scrollbar-thumb {
+    background: rgb(184, 182, 182);
+    border-radius: 5px;
+}
+
+
+#Group::-webkit-scrollbar-thumb:hover {
+    background: #686868;
+}
+
+.groupName {
+    width: auto;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.groupDetail:hover {
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: bold;
+}
+
+#friendsGroup {
+    width: 70%;
+    height: 76%;
+    overflow:auto;
+    margin: 0px auto;
+}
+
+.deleteImg {
+    height: 25px;
+    width: 25px;
+}
+
+img {
+    height: 60px;
+    width: 60px;
+}
+
+.negativeAmount {
+    color: red;
+}
+
+.positiveAmount {
+    color: green;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+button:hover
+{
+color: white;
+    background: #373c3b;}
+
+.modal-content {
+    background-color: #ffffff;
+    padding: 0 1% 6% 6%;
+    height: 30%;
+    width: 30%;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (max-width: 600px),
+(max-height: 500px) {
+    header {
+        padding: 5px 10px;
+    }
+
+    #img {
+        margin-left: 30%;
+    }
+
+
+    .icon-class {
+        font-size: 10px;
+      }
+
+    #groups,
+    #friends {
+        width: 90%;
+        padding: 5px;
+    }
+
+    .groupDetail {
+
+        height: 50px;
+    }
+
+    .buttonStyle {
+        height: 15px;
+        width: 70px;
+        font-size: 8px;
+    }
+
+    img {
+        height: 40px;
+        width: 40px;
+    }
+    .pagination {
+        margin-top: 0px;
+    }
+    .pagination ul li a {
+        padding: 2px 3px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+
+    .groupDetail {
+        font-size: 10px;
+    }
+
+    #activityBtn {
+        margin-left: 20px;
+    }
+
+    img {
+        height: 30px;
+        width: 30px;
+    }
+
+}

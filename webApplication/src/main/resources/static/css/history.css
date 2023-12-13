@@ -1,0 +1,174 @@
+/* .container {
+     max-width: 800px;
+     
+ } */
+.icon-class {
+  font-size: 30px;
+  color: #121212;
+
+}
+
+.icon-div {
+  margin-right: 2%;
+}
+
+#buttonLoad {
+  background-color: #ffffff;
+  border: none;
+  color: black;
+  padding: 12px 24px;
+  font-size: 14px;
+}
+
+#activityPage {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+section {
+  height: 85%
+}
+
+.transaction-list {
+  padding-left: 20px;
+
+}
+
+#dashboardPage {
+  display: flex;
+  margin: 0px;
+  padding-top: 20px;
+
+}
+
+.transaction {
+  margin: 5px 0 10px 0;
+  padding: 10px;
+  border-left: 2px solid #007bff;
+  background-color: #f2f2f2;
+}
+
+.transaction p {
+  margin: 5px 0px;
+}
+
+.dateTime {
+  font-family: Arial, sans-serif;
+  color: blue;
+  font-size: 12px;
+}
+
+h3 {
+  margin-top: -8px;
+}
+
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  margin: 2% 18%;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  width: 120px;
+  border-radius: 2px;
+
+}
+
+.button:hover {
+  background-color: rgb(196, 193, 193);
+}
+
+
+
+.hidden {
+  display: none;
+}
+
+
+.open {
+  display: block;
+}
+
+.dropdown-content .open {
+  display: block;
+
+}
+
+.dropdownn {
+  margin-left: -50px;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+
+}
+
+.dropdownn-trigger {
+  width: 100px;
+  padding: 5px 10px;
+  border: 1px solid #0b0b0b;
+  cursor: pointer;
+}
+
+.dropdownn-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  width: 120px;
+}
+
+label {
+  display: block;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.pagination {
+  margin-top: 10px;
+  text-align: center;
+  display: none;
+}
+
+.pagination ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+}
+
+
+.pagination ul li {
+  display: inline;
+  margin: 0 5px;
+}
+
+.pagination ul li a {
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #9db2c7;
+}
+
+.pagination li a.active {
+  font-weight: bold;
+  color: black;
+}
+
+
+.pagination ul li.ellipsis {
+  pointer-events: none;
+  cursor: default;
+}
+
+#groupBalanceChart {
+  margin-left: -60px;
+}
+
+#dashboardChart {
+  margin-left: -80px;
+}

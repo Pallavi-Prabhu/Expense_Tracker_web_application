@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SignUp Page</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/signup.css}">
+    <link rel="shortcut icon" type="image/png" th:href="@{favicon.png}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+    <script src="/js/signup.js"></script>
+</head>
+
+<body>
+    <div class="box">
+
+        <div id="headDiv">
+            <div>
+                <a th:href="@{/login}">
+                    <i class="fa-solid fa-arrow-left icon-class"></i></a>
+                <!--                <img src="/images/back.png" alt="backbtn" width="50px" height="70px">-->
+            </div>
+            <div><span id="spanSignup">Sign Up</Span></div>
+        </div>
+        <div id="errorMsg" th:text="${error}"></div>
+        <div class="content">
+            <form action="/signup" method="POST" onsubmit="return validateForm()">
+                <input type="email" name="email" id="signEmail" maxlength="25" placeholder="Enter Email">
+                <input type="text" name="fname" id="signFname" maxlength="15" placeholder="Enter First Name">
+                <input type="text" name="lname" id="signLname" maxlength="15" placeholder="Enter Last Name">
+                <input type="number" name="pnumber" id="signNumber" maxlength="10" min="1" step="1"
+                    placeholder="Enter Phone Number">
+                <input type="password" name="password" id="signPassword" maxlength="15" placeholder="Enter Password">
+                <input type="password" name="Cpassword" id="signCpassword" maxlength="15"
+                    placeholder="Re-enter Password"><br>
+                <input type="submit" value="SignUp">
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
